@@ -6,7 +6,7 @@ const port = 8000;
 
 app.use(express.json());
 
-app.use(categoriesRoutes);
+app.use("/categories", categoriesRoutes);
 
 app.listen(port, () => {
   console.info(`Server is running at http://localhost:${port}`);
