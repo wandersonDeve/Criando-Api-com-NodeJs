@@ -1,5 +1,6 @@
 import express from "express";
 import { categoriesRoutes } from "./routes/categories.routes";
+import { specificationsRoutes } from "./routes/specifications.routes";
 const app = express();
 
 const port = 8000;
@@ -7,6 +8,7 @@ const port = 8000;
 app.use(express.json());
 
 app.use("/categories", categoriesRoutes);
+app.use('/specifications', specificationsRoutes);
 
 app.listen(port, () => {
   console.info(`Server is running at http://localhost:${port}`);
