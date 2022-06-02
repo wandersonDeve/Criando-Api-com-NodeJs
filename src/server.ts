@@ -6,7 +6,7 @@ import swaggerDocument from "./swagger.json";
 
 const app = express();
 
-const port = 8000;
+const port = 3333;
 
 app.use(express.json());
 
