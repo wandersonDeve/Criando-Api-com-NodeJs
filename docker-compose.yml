@@ -1,10 +1,10 @@
 
-version: "3.7"
+version: "3.9"
 
 services:
-  database: 
+  database_ignite: 
     image: postgres
-    container_name: database_ignite_postgres
+    container_name: database_ignite
     restart: always
     ports: 
       - 5432:5432
@@ -14,22 +14,19 @@ services:
       - POSTGRES_DB=rentx
     volumes:
       - pgdata:/data/postgres
-
-
   app:
     build: .
     container_name: rentx
     restart: always
-    ports: 
+    ports:
       - 3333:3333
-      - 9229:9229 
+      - 8000:8000
     volumes: 
       - .:/usr/app
     links: 
-      - database
+      - database_ignite
     depends_on:
-      - database
-
+      - database_ignite
 
 
 volumes:
