@@ -11,7 +11,7 @@ class ImportCategoriesController {
 
     importCategoriesUseCase.execute(file);
 
-    return res.send();
+    return res.status(201).send();
   }
 }
 
