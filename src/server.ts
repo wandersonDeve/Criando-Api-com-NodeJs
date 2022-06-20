@@ -1,6 +1,6 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
-import "reflect-metadata"
+import "reflect-metadata";
 
 import { router } from "./routes";
 import swaggerDocument from "./swagger.json";
@@ -19,5 +19,5 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(router);
 
 app.listen(port, () => {
-  console.info(`Server is running at http://localhost:${port}`);
+  console.info(`Server is running at http://localhost:${port} user`);
 });
