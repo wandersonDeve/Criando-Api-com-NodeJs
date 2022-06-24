@@ -2,9 +2,9 @@ import { getRepository, Repository } from "typeorm";
 
 import { User } from "../../entities/User";
 import { ICreateUserDTO } from "../../dtos/ICreateUserDTO";
-import { IUserRepository } from "../IUsersRepository";
+import { IUsersRepository } from "../IUsersRepository";
 
-class UsersRepository implements IUserRepository {
+class UsersRepository implements IUsersRepository {
   private repository: Repository<User>;
 
   constructor() {
@@ -13,14 +13,12 @@ class UsersRepository implements IUserRepository {
 
   async create({
     name,
-    username,
     password,
     email,
     driver_license,
   }: ICreateUserDTO): Promise<void> {
     const user = this.repository.create({
       name,
-      username,
       password,
       email,
       driver_license,
