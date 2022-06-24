@@ -19,5 +19,5 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(router);
 
 app.listen(port, () => {
-  console.info(`Server is running at http://localhost:${port} user`);
+  console.info(`Server is running at http://localhost:${port}`);
 });
