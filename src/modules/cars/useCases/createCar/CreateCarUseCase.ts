@@ -8,7 +8,7 @@ import { Car } from "@modules/cars/infra/typeorm/entities/Cars";
 @injectable()
 class CreateCarUseCase {
   constructor(
-    //@inject("CarsRepository")
+    @inject("CarsRepository")
     private carsRepository: ICarsRepository
   ) {}
 
@@ -29,9 +29,9 @@ class CreateCarUseCase {
       throw new AppError("Car already exists");
     }
 
-    const licensePlateLength = license_plate.replace("-","")
-    
-    if(licensePlateLength.length != 7) {
+    const licensePlateLength = license_plate.replace("-", "");
+
+    if (licensePlateLength.length != 7) {
       throw new AppError("License plate must have 7 characters");
     }
 
