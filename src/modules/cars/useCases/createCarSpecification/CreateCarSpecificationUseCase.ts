@@ -14,15 +14,15 @@ interface IRequest {
 @injectable()
 class CreateCarSpecificationUseCase {
   constructor(
-    @inject("CarRepository")
-    private carRepository: ICarsRepository,
+    @inject("CarsRepository")
+    private carsRepository: ICarsRepository,
 
     @inject("SpecificationsRepository")
     private specificationsRepository: ISpecificationsRepository
   ) {}
 
   async execute({ car_id, specifications_id }: IRequest): Promise<Car> {
-    const carExists = await this.carRepository.findById(car_id);
+    const carExists = await this.carsRepository.findById(car_id);
 
     if (!carExists) {
       throw new AppError("Car does not exists");
@@ -34,7 +34,7 @@ class CreateCarSpecificationUseCase {
 
     carExists.specifications = specifications;
 
-    await this.carRepository.create(carExists);
+    await this.carsRepository.create(carExists);
 
     return carExists;
   }
