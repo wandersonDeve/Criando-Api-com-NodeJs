@@ -1,6 +1,6 @@
 ## Criar uma migration
 
-`yarn typeorm migration:create src/database/migrations/CreateCategories`
+`yarn typeorm migration:create -n `
 
 ## Rodar as migrations
 
