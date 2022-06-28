@@ -7,7 +7,7 @@ class ImportCategoriesController {
   async handle(req: Request, res: Response): Promise<Response> {
     const { file } = req;
 
-    const importCategoriesUseCase = await container.resolve(ImportCategoriesUseCase);
+    const importCategoriesUseCase = container.resolve(ImportCategoriesUseCase);
 
     importCategoriesUseCase.execute(file);
 
