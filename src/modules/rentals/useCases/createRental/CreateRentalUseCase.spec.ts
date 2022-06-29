@@ -5,10 +5,10 @@ import { AppError } from "@shared/err/AppError";
 import dayjs from "dayjs";
 import { CreateRentalUseCase } from "./CreateRentalUseCase";
 
-let createRentalUseCase: CreateRentalUseCase;
-let rentalsRepositoryInMemory: RentalsRepositoryInMemory;
-let carsRepositoryInMemory: CarsRepositoryInMemory;
 let dayjsDateProvider: DayjsDateProvider;
+let carsRepositoryInMemory: CarsRepositoryInMemory;
+let rentalsRepositoryInMemory: RentalsRepositoryInMemory;
+let createRentalUseCase: CreateRentalUseCase;
 
 describe("CreateRentalUseCase", () => {
   const dayAdd24Hours = dayjs().add(1, "day").toDate();
