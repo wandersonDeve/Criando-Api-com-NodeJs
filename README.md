@@ -48,6 +48,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2023 [Wanderson Santos](https://github.com/wandersonDeve).<br />
 This project is [MIT](https://github.com/wandersonDeve/Criando-Api-com-NodeJs/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
