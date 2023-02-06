@@ -2,8 +2,16 @@
   "name": "api_com_node",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Wanderson <wanderson.santos@gcbinvestimentos.com>",
+  "author": "Wanderson Santos",
   "license": "MIT",
+  "homepage": "https://github.com/wandersonDeve/Criando-Api-com-NodeJs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandersonDeve/Criando-Api-com-NodeJs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wandersonDeve/Criando-Api-com-NodeJs/issues"
+  },
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
