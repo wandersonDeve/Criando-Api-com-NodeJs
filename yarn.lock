@@ -1703,7 +1703,7 @@ dezalgo@^1.0.4:
 did-you-mean@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/did-you-mean/-/did-you-mean-0.0.1.tgz#8851ce82407903cb62c12cb6ad4f676921ccdec3"
-  integrity sha1-iFHOgkB5A8tiwSy2rU9naSHM3sM=
+  integrity sha512-rKxPpbrHr4/u8VMPde6Z3DhbGoXw7kepHZIU2FGs+IU+LKnhEIlw1cx80FZ7fLruJXDyu0slKMai2FhPRZjwxQ==
   dependencies:
     levenshtein "*"
     underscore "*"
@@ -2392,9 +2392,9 @@ get-symbol-description@^1.0.0:
     get-intrinsic "^1.1.1"
 
 git-commit-msg-linter@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-4.1.3.tgz#7892b4ba89234d14519a092ed23c00e21b9fc3e1"
-  integrity sha512-ZeTMxIpMqUvOW60HX/esY84hb/uu+raWpKbaLBaLG81qYxuL2aVrg5Fihard0anhD0MVwDWnMkLMh85XWUUqlw==
+  version "4.9.4"
+  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-4.9.4.tgz#feb4e0c873ae33099fc6678e7313f0aaacde911d"
+  integrity sha512-it+K/TCq2MeUPFDPbJozKgTVlobDicZAjDHOMrA6fivRmKgbkEllhfgS+5DZPXTXEBs7/1y9D/+/UdPQj/oTTw==
   dependencies:
     chalk "^2.4.2"
     did-you-mean "^0.0.1"
@@ -3277,7 +3277,7 @@ leven@^3.1.0:
 levenshtein@*:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/levenshtein/-/levenshtein-1.0.5.tgz#3911737a9cb56da345d008f55782c6f138979ba3"
-  integrity sha1-ORFzepy1baNF0Aj1V4LG8TiXm6M=
+  integrity sha512-UQf1nnmxjl7O0+snDXj2YF2r74Gkya8ZpnegrUBYN9tikh2dtxV/ey8e07BO5wwo0i76yjOvbDhFHdcPEiH9aA==
 
 levn@^0.4.1:
   version "0.4.1"
@@ -4624,9 +4624,9 @@ unbox-primitive@^1.0.2:
     which-boxed-primitive "^1.0.2"
 
 underscore@*:
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.3.tgz#54bc95f7648c5557897e5e968d0f76bc062c34ee"
-  integrity sha512-QvjkYpiD+dJJraRA8+dGAU4i7aBbb2s0S3jA45TFOvg2VgqvdCDd/3N6CqA8gluk1W91GLoXg5enMUx560QzuA==
+  version "1.13.6"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.6.tgz#04786a1f589dc6c09f761fc5f45b89e935136441"
+  integrity sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
