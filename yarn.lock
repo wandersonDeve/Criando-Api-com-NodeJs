@@ -1535,6 +1535,14 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
+commit-msg-linter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/commit-msg-linter/-/commit-msg-linter-1.0.0.tgz#45a29e9c38d8bb71e98d4da67f230abf01b46463"
+  integrity sha512-Di9oAjfjIwAcASQ8abW1936twemUdDQq4D1dBL42Y+S6rNXykauIBPztj8Ej4/MjI6zIziLVzfhmdkg0z4I4rg==
+  dependencies:
+    did-you-mean "^0.0.1"
+    supports-color "^8.1.1"
+
 component-emitter@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
@@ -2404,14 +2412,13 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-git-commit-msg-linter@^4.1.3:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-4.11.1.tgz#abe411c460e3527641d5141d407183119c210f9e"
-  integrity sha512-MKkHt9v8FjEDxPMmelgG/EJm4V5mf0mL+u+yokDxPWtc0LW7W/+sG0gEG3H/zhE8JMOjYScCgrEwsyEyNeKpXw==
+git-commit-msg-linter@^5.0.0:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-5.0.4.tgz#c89aefd82902948196821850dfd5a2ac584a8d92"
+  integrity sha512-XxdvLbgQDbPlZwru9Tns2zgFvk4UhcWT+LVVNP2tSiAjkY0RJws9zqhUgolXJvpiPDvSbbDMpGu3EtXiKN/IeA==
   dependencies:
     chalk "^2.4.2"
-    did-you-mean "^0.0.1"
-    supports-color "^8.1.1"
+    commit-msg-linter "^1.0.0"
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
