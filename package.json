@@ -34,7 +34,7 @@
     "swagger-ui-express": "^5.0.0",
     "tsyringe": "^4.7.0",
     "typeorm": "^0.3.0",
-    "uuid": "^10.0.0"
+    "uuid": "^11.0.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
